@@ -1,0 +1,31 @@
+user_id,full_name,email,role,department,manager_id,region,quota_annual,hire_date,is_active
+USR-3001,Jessica Clark,jessica.c@intellia.ai,AE,Sales,USR-3003,AMER,1800000,2023-11-30,1
+USR-3002,Elena Benson,elena.b@intellia.ai,Senior AE,Sales,USR-3003,AMER,2400000,2025-05-16,1
+USR-3003,James Clark,james.c@intellia.ai,Sales Manager,Sales,USR-3004,AMER,5800000,2025-04-26,1
+USR-3004,Emily Lewis,emily.l@intellia.ai,CRO,Executive,,AMER,12000000,2023-10-28,1
+USR-3005,Robert Jackson,robert.j@intellia.ai,AE,Sales,USR-3003,AMER,1800000,2023-07-01,1
+USR-3006,Priya Mendez,priya.m@intellia.ai,Senior AE,Sales,USR-3003,AMER,2400000,2025-09-19,1
+USR-3007,Michael Cole,michael.c@intellia.ai,AE,Sales,USR-3003,AMER,1800000,2022-11-15,1
+USR-3008,Elena Thomas,elena.t@intellia.ai,Sales Manager,Sales,USR-3004,EMEA,5400000,2023-07-23,1
+USR-3009,Brian Mendez,brian.m@intellia.ai,AE,Sales,USR-3008,EMEA,1800000,2023-01-15,1
+USR-3010,Sophia Taylor,sophia.t@intellia.ai,Senior AE,Sales,USR-3008,EMEA,2400000,2024-08-27,1
+USR-3011,Daniel Wright,daniel.w@intellia.ai,AE,Sales,USR-3008,EMEA,1800000,2024-11-20,1
+USR-3012,Laura Adams,laura.a@intellia.ai,AE,Sales,USR-3008,APAC,1800000,2024-04-06,1
+USR-3013,Tom Chen,tom.c@intellia.ai,Senior AE,Sales,USR-3008,APAC,2400000,2023-10-29,1
+USR-3014,Rachel Adams,rachel.a@intellia.ai,SDR,Sales,USR-3003,AMER,0,2024-11-02,1
+USR-3015,Mark Cole,mark.c@intellia.ai,SDR,Sales,USR-3008,EMEA,0,2024-02-06,1
+USR-3016,David Adams,david.a@intellia.ai,Solutions Engineer,Sales,USR-3003,AMER,0,2024-01-05,1
+USR-3017,Megan Taylor,megan.t@intellia.ai,Solutions Engineer,Sales,USR-3008,EMEA,0,2025-07-04,1
+USR-3018,James Jackson,james.j@intellia.ai,RevOps Lead,RevOps,USR-3004,AMER,0,2024-08-31,1
+USR-3019,Sarah Cole,sarah.c@intellia.ai,RevOps Analyst,RevOps,USR-3018,AMER,0,2025-04-23,1
+USR-3020,Amanda Sharma,amanda.s@intellia.ai,RevOps Analyst,RevOps,USR-3018,EMEA,0,2023-04-06,1
+USR-3021,Sarah Anderson,sarah.a@intellia.ai,VP Marketing,Marketing,USR-3004,AMER,0,2022-11-13,1
+USR-3022,Priya Rostova,priya.r@intellia.ai,Demand Gen Lead,Marketing,USR-3021,AMER,0,2022-11-21,1
+USR-3023,Robert Mendez,robert.m@intellia.ai,Content Lead,Marketing,USR-3021,EMEA,0,2023-10-17,1
+USR-3024,Sophia Jackson,sophia.j@intellia.ai,VP Customer Success,Customer Success,USR-3004,AMER,0,2023-08-14,1
+USR-3025,James Sharma,james.s@intellia.ai,CSM,Customer Success,USR-3024,AMER,0,2023-12-22,1
+USR-3026,Kevin Thomas,kevin.t@intellia.ai,CSM,Customer Success,USR-3024,EMEA,0,2023-08-01,1
+USR-3027,Nina Novak,nina.n@intellia.ai,CSM,Customer Success,USR-3024,APAC,0,2024-03-26,1
+USR-3028,Omar Okafor,omar.o@intellia.ai,Solutions Engineer,Sales,USR-3008,APAC,0,2024-03-17,1
+USR-3029,Grace Diaz,grace.d@intellia.ai,RevOps Analyst,RevOps,USR-3018,APAC,0,2023-07-02,1
+USR-3030,Victor Fischer,victor.f@intellia.ai,Enablement Lead,Sales,USR-3004,AMER,0,2023-10-15,1

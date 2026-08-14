@@ -1,0 +1,63 @@
+# Roughly 60% of the "premium" look is configuration, not CSS. Streamlit 1.50
+# exposes enough theme surface (radii, borders, heading sizes, chart colours) to
+# remove the default Streamlit look without touching a generated classname.
+#
+# Colours here mirror intellia/theme/tokens.py. Change them there first.
+
+[theme]
+base = "light"
+primaryColor = "#1D3E76"
+backgroundColor = "#F6F8FB"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0E1729"
+borderColor = "#E4E8F0"
+dataframeBorderColor = "#E4E8F0"
+dataframeHeaderBackgroundColor = "#F1F4F9"
+showWidgetBorder = true
+showSidebarBorder = false
+linkUnderline = false
+
+baseRadius = "0.625rem"
+buttonRadius = "0.5rem"
+baseFontSize = 14
+baseFontWeight = 400
+
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Inter"
+# Kills the 2.75rem default h1 outright.
+headingFontSizes = ["1.25rem", "1rem", "0.9375rem", "0.875rem", "0.8125rem", "0.75rem"]
+headingFontWeights = [600, 600, 600, 500, 500, 500]
+
+# Navy monochromatic. Series separate by lightness, never by hue.
+chartCategoricalColors = ["#1D3E76", "#2F5C9C", "#4B7BBC", "#7099D0", "#9BB9E2", "#C3D6EF"]
+chartSequentialColors = ["#EDF2FA", "#DCE6F5", "#C3D6EF", "#A8C2E6", "#8AAADB",
+                         "#6B90CC", "#4E76B8", "#365D9E", "#22447F", "#12285C"]
+
+# Re-map the semantic families so st.badge and :color[] markdown match the system.
+grayColor = "#8794AB"
+blueColor = "#1D3E76"
+violetColor = "#1D3E76"
+greenColor = "#15694A"
+redColor = "#A82A22"
+orangeColor = "#8A5A00"
+
+# The left navigation is chrome, not canvas: fixed dark navy in both themes.
+[theme.sidebar]
+backgroundColor = "#0B1B36"
+secondaryBackgroundColor = "#12294B"
+textColor = "#EEF3FB"
+borderColor = "rgba(255,255,255,.09)"
+primaryColor = "#8FB2E8"
+showWidgetBorder = false
+baseRadius = "0.5rem"
+
+[client]
+toolbarMode = "minimal"
+# No traceback ever reaches the browser.
+showErrorDetails = "none"
+
+[server]
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false

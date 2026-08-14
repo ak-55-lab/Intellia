@@ -1,0 +1,7 @@
+# Python 3.9 compatible. streamlit brings altair + pandas + pyarrow.
+streamlit>=1.50
+pandas>=2.0
+altair>=5.5
+anthropic>=0.121        # optional: the app runs fully without a key
+pytest>=8.0             # tests only
+python-pptx>=1.0        # tests only: asserts the deck's counts match the code

@@ -1,0 +1,273 @@
+contact_id,account_id,first_name,last_name,email,title,persona_role,seniority,influence,is_champion,last_contacted_at,created_at
+CNT-2001,ACC-1001,Victor,Okafor,vokafor@apexlogistics.com,Chief Revenue Officer,Economic Buyer,Executive,47,0,2026-07-28,2025-11-18
+CNT-2002,ACC-1001,Priya,White,pwhite@apexlogistics.com,Head of Business Systems,Technical Buyer,Director,86,0,2026-05-28,2024-08-17
+CNT-2003,ACC-1001,Brian,Fischer,bfischer@apexlogistics.com,Business Analyst,Influencer,Manager,84,0,2026-05-18,2024-10-21
+CNT-2004,ACC-1001,Carlos,Okafor,cokafor@apexlogistics.com,"Senior Manager, Sales Strategy",Champion,Director,79,1,2026-07-01,2024-05-29
+CNT-2005,ACC-1001,Sarah,Taylor,staylor@apexlogistics.com,Chief Revenue Officer,Economic Buyer,Executive,90,0,2026-07-27,2025-11-02
+CNT-2006,ACC-1001,James,Martin,jmartin@apexlogistics.com,Head of RevOps,Champion,Director,58,0,2026-06-11,2024-12-03
+CNT-2007,ACC-1002,Emily,Sharma,esharma@vortexanalytics.com,VP of Sales,Economic Buyer,Executive,64,0,2026-06-03,2024-12-22
+CNT-2008,ACC-1002,Elena,Chen,echen@vortexanalytics.com,Director of Data Engineering,Technical Buyer,Director,52,0,2026-05-24,2024-08-12
+CNT-2009,ACC-1002,Megan,White,mwhite@vortexanalytics.com,Sales Enablement Manager,Influencer,Manager,82,0,2026-08-07,2024-11-14
+CNT-2010,ACC-1003,Brian,Taylor,btaylor@cloudscalesystems.com,Head of RevOps,Champion,Director,52,1,2026-05-18,2025-08-25
+CNT-2011,ACC-1003,Omar,Cole,ocole@cloudscalesystems.com,Business Analyst,Influencer,Manager,55,0,2026-07-19,2024-06-26
+CNT-2012,ACC-1003,Sarah,Clark,sclark@cloudscalesystems.com,VP of IT,Technical Buyer,Director,78,0,2026-05-20,2024-05-16
+CNT-2013,ACC-1003,Priya,White,pwhite@cloudscalesystems.com,VP of Revenue Operations,Economic Buyer,Executive,74,0,2026-06-17,2025-03-25
+CNT-2014,ACC-1003,Priya,Sharma,psharma@cloudscalesystems.com,Enterprise Architect,Technical Buyer,Director,69,0,2026-05-28,2024-03-07
+CNT-2015,ACC-1004,Jessica,Martin,jmartin@biohealthlabs.com,Sales Enablement Manager,Influencer,Manager,96,0,2026-06-21,2025-04-05
+CNT-2016,ACC-1004,Robert,Jackson,rjackson@biohealthlabs.com,VP of IT,Technical Buyer,Director,78,0,2026-06-29,2025-11-24
+CNT-2017,ACC-1004,Tom,Taylor,ttaylor@biohealthlabs.com,Director of Sales Operations,Champion,Director,70,0,2026-06-25,2025-06-14
+CNT-2018,ACC-1004,Emily,Okafor,eokafor@biohealthlabs.com,Chief Revenue Officer,Economic Buyer,Executive,62,0,2026-06-04,2024-10-21
+CNT-2019,ACC-1005,Mark,Sharma,msharma@omniretailgroup.com,"Manager, Sales Operations",Influencer,Manager,52,0,2026-08-12,2026-05-17
+CNT-2020,ACC-1005,Elena,Harris,eharris@omniretailgroup.com,"Senior Manager, Sales Strategy",Champion,Director,73,1,2026-06-28,2024-10-23
+CNT-2021,ACC-1005,Emily,Thomas,ethomas@omniretailgroup.com,Director of Data Engineering,Technical Buyer,Director,98,0,2026-07-14,2024-09-12
+CNT-2022,ACC-1006,Kevin,Chen,kchen@cyberguardnetworks.com,Sales Enablement Manager,Influencer,Manager,55,0,2026-08-05,2024-06-22
+CNT-2023,ACC-1006,Omar,Diaz,odiaz@cyberguardnetworks.com,Chief Revenue Officer,Economic Buyer,Executive,68,0,2026-05-30,2025-06-20
+CNT-2024,ACC-1006,Priya,Sharma,psharma@cyberguardnetworks.com,Enterprise Architect,Technical Buyer,Director,75,0,2026-06-05,2025-12-01
+CNT-2025,ACC-1007,James,Jenkins,jjenkins@datapulseai.com,Chief Revenue Officer,Economic Buyer,Executive,49,0,2026-06-22,2026-04-02
+CNT-2026,ACC-1007,Grace,Jenkins,gjenkins@datapulseai.com,"Senior Manager, Sales Strategy",Champion,Director,92,1,2026-06-27,2026-01-24
+CNT-2027,ACC-1007,Daniel,Lewis,dlewis@datapulseai.com,VP of IT,Technical Buyer,Director,44,0,2026-07-28,2026-05-05
+CNT-2028,ACC-1007,David,Clark,dclark@datapulseai.com,Sales Enablement Manager,Influencer,Manager,66,0,2026-06-07,2024-03-25
+CNT-2029,ACC-1007,Grace,Lewis,glewis@datapulseai.com,Enterprise Architect,Technical Buyer,Director,75,0,2026-08-10,2025-07-02
+CNT-2030,ACC-1007,James,Fischer,jfischer@datapulseai.com,Chief Revenue Officer,Economic Buyer,Executive,88,0,2026-05-24,2025-02-06
+CNT-2031,ACC-1008,Nina,Adams,nadams@nexusfinancial.com,VP of IT,Technical Buyer,Director,55,0,2026-06-21,2024-03-10
+CNT-2032,ACC-1008,Omar,Miller,omiller@nexusfinancial.com,Chief Revenue Officer,Economic Buyer,Executive,70,0,2026-06-21,2025-06-16
+CNT-2033,ACC-1008,Sophia,Clark,sclark@nexusfinancial.com,Director of Sales Operations,Champion,Director,56,1,2026-07-16,2024-08-15
+CNT-2034,ACC-1008,Carlos,Sharma,csharma@nexusfinancial.com,Sales Enablement Manager,Influencer,Manager,58,0,2026-06-01,2025-12-09
+CNT-2035,ACC-1008,James,Sharma,jsharma@nexusfinancial.com,Director of Sales Operations,Champion,Director,74,0,2026-06-14,2025-11-06
+CNT-2036,ACC-1008,Sarah,Diaz,sdiaz@nexusfinancial.com,Head of RevOps,Champion,Director,53,0,2026-07-17,2025-04-21
+CNT-2037,ACC-1009,Sophia,White,swhite@strataenergy.com,Enterprise Architect,Technical Buyer,Director,57,0,2026-07-15,2026-05-25
+CNT-2038,ACC-1009,David,Fischer,dfischer@strataenergy.com,Chief Revenue Officer,Economic Buyer,Executive,87,0,2026-07-24,2024-09-01
+CNT-2039,ACC-1009,Priya,Mendez,pmendez@strataenergy.com,"Senior Manager, Sales Strategy",Champion,Director,82,1,2026-06-22,2026-02-24
+CNT-2040,ACC-1009,David,Jenkins,djenkins@strataenergy.com,Business Analyst,Influencer,Manager,49,0,2026-06-26,2025-06-20
+CNT-2041,ACC-1010,Elena,Mendez,emendez@fintechdynamics.com,Director of GTM Systems,Champion,Director,74,0,2026-05-23,2024-11-05
+CNT-2042,ACC-1010,James,Diaz,jdiaz@fintechdynamics.com,VP of Revenue Operations,Economic Buyer,Executive,71,0,2026-07-11,2026-01-13
+CNT-2043,ACC-1010,Emily,Anderson,eanderson@fintechdynamics.com,"Program Manager, GTM",Influencer,Manager,83,0,2026-08-08,2025-01-19
+CNT-2044,ACC-1011,Kevin,Martin,kmartin@quantumedge.com,Director of Sales Operations,Champion,Director,84,1,2026-07-22,2024-11-24
+CNT-2045,ACC-1011,David,White,dwhite@quantumedge.com,"Manager, Sales Operations",Influencer,Manager,82,0,2026-07-22,2026-01-12
+CNT-2046,ACC-1011,Emily,Rostova,erostova@quantumedge.com,Head of Business Systems,Technical Buyer,Director,46,0,2026-05-18,2024-09-03
+CNT-2047,ACC-1011,Victor,Mendez,vmendez@quantumedge.com,Chief Revenue Officer,Economic Buyer,Executive,83,0,2026-07-04,2026-01-01
+CNT-2048,ACC-1011,Omar,Clark,oclark@quantumedge.com,VP of IT,Technical Buyer,Director,89,0,2026-05-29,2026-01-22
+CNT-2049,ACC-1011,Megan,Mendez,mmendez@quantumedge.com,Sales Enablement Manager,Influencer,Manager,71,0,2026-07-16,2025-03-13
+CNT-2050,ACC-1012,Amanda,Clark,aclark@synergymedia.com,Director of Data Engineering,Technical Buyer,Director,88,0,2026-05-22,2025-07-03
+CNT-2051,ACC-1012,Elena,Lewis,elewis@synergymedia.com,"Manager, Sales Operations",Influencer,Manager,70,0,2026-07-01,2025-12-07
+CNT-2052,ACC-1012,Sophia,Rostova,srostova@synergymedia.com,VP of Revenue Operations,Economic Buyer,Executive,90,0,2026-06-01,2024-09-25
+CNT-2053,ACC-1013,Mark,Jackson,mjackson@astramanufacturing.com,"Program Manager, GTM",Influencer,Manager,48,0,2026-06-22,2025-07-21
+CNT-2054,ACC-1013,Mark,Anderson,manderson@astramanufacturing.com,VP of IT,Technical Buyer,Director,68,0,2026-07-08,2025-01-25
+CNT-2055,ACC-1013,Nina,Rostova,nrostova@astramanufacturing.com,"Senior Manager, Sales Strategy",Champion,Director,83,1,2026-06-09,2026-01-19
+CNT-2056,ACC-1013,Michael,Martin,mmartin@astramanufacturing.com,Chief Revenue Officer,Economic Buyer,Executive,85,0,2026-07-29,2026-03-12
+CNT-2057,ACC-1014,Mark,White,mwhite@velocitycloud.com,Director of Sales Operations,Champion,Director,55,0,2026-07-27,2024-06-25
+CNT-2058,ACC-1014,Daniel,Lewis,dlewis@velocitycloud.com,Chief Revenue Officer,Economic Buyer,Executive,44,0,2026-06-01,2025-05-26
+CNT-2059,ACC-1014,Megan,Rostova,mrostova@velocitycloud.com,"Manager, Sales Operations",Influencer,Manager,53,0,2026-06-24,2025-02-20
+CNT-2060,ACC-1014,David,Fischer,dfischer@velocitycloud.com,Enterprise Architect,Technical Buyer,Director,49,0,2026-07-08,2026-03-31
+CNT-2061,ACC-1014,Jessica,Mendez,jmendez@velocitycloud.com,"Program Manager, GTM",Influencer,Manager,74,0,2026-08-12,2025-07-13
+CNT-2062,ACC-1014,Laura,Fischer,lfischer@velocitycloud.com,Director of GTM Systems,Champion,Director,84,0,2026-06-02,2024-05-31
+CNT-2063,ACC-1015,Rachel,Diaz,rdiaz@horizonventures.com,VP of Revenue Operations,Economic Buyer,Executive,59,0,2026-05-31,2025-06-04
+CNT-2064,ACC-1015,Grace,Clark,gclark@horizonventures.com,Head of Business Systems,Technical Buyer,Director,49,0,2026-06-08,2026-01-17
+CNT-2065,ACC-1015,Mark,White,mwhite@horizonventures.com,"Senior Manager, Sales Strategy",Champion,Director,74,1,2026-06-05,2026-02-20
+CNT-2066,ACC-1016,Tom,Taylor,ttaylor@pinnaclesoftware.com,"Senior Manager, Sales Strategy",Champion,Director,85,0,2026-07-18,2026-04-19
+CNT-2067,ACC-1016,Hannah,Wright,hwright@pinnaclesoftware.com,"Manager, Sales Operations",Influencer,Manager,46,0,2026-07-13,2024-07-06
+CNT-2068,ACC-1016,Sophia,Thomas,sthomas@pinnaclesoftware.com,Chief Revenue Officer,Economic Buyer,Executive,95,0,2026-06-02,2025-05-26
+CNT-2069,ACC-1016,Rachel,Sharma,rsharma@pinnaclesoftware.com,VP of IT,Technical Buyer,Director,77,0,2026-07-30,2024-04-09
+CNT-2070,ACC-1017,Kevin,Rostova,krostova@aetherdigital.com,Sales Enablement Manager,Influencer,Manager,54,0,2026-08-05,2025-12-30
+CNT-2071,ACC-1017,Robert,Clark,rclark@aetherdigital.com,Chief Revenue Officer,Economic Buyer,Executive,70,0,2026-06-03,2025-12-08
+CNT-2072,ACC-1017,Jessica,Cole,jcole@aetherdigital.com,Head of Business Systems,Technical Buyer,Director,50,0,2026-05-20,2025-10-29
+CNT-2073,ACC-1017,Laura,Thomas,lthomas@aetherdigital.com,Director of Sales Operations,Champion,Director,61,0,2026-06-02,2026-02-13
+CNT-2074,ACC-1017,Jessica,Thomas,jthomas@aetherdigital.com,Enterprise Architect,Technical Buyer,Director,79,0,2026-08-01,2025-03-12
+CNT-2075,ACC-1018,Tom,Fischer,tfischer@luminahealth.com,Chief Revenue Officer,Economic Buyer,Executive,83,0,2026-07-13,2025-09-06
+CNT-2076,ACC-1018,Elena,Taylor,etaylor@luminahealth.com,"Senior Manager, Sales Strategy",Champion,Director,57,1,2026-07-20,2024-03-16
+CNT-2077,ACC-1018,Victor,Adams,vadams@luminahealth.com,VP of IT,Technical Buyer,Director,92,0,2026-08-08,2024-10-07
+CNT-2078,ACC-1018,Sophia,Rostova,srostova@luminahealth.com,Sales Enablement Manager,Influencer,Manager,80,0,2026-07-31,2026-03-03
+CNT-2079,ACC-1018,Elena,Diaz,ediaz@luminahealth.com,"Manager, Sales Operations",Influencer,Manager,76,0,2026-05-28,2026-03-02
+CNT-2080,ACC-1019,Michael,Mendez,mmendez@crestsolutions.com,VP of Revenue Operations,Economic Buyer,Executive,89,0,2026-07-19,2026-06-05
+CNT-2081,ACC-1019,Priya,Walker,pwalker@crestsolutions.com,Director of Sales Operations,Champion,Director,94,1,2026-06-08,2024-06-20
+CNT-2082,ACC-1019,Mark,White,mwhite@crestsolutions.com,Sales Enablement Manager,Influencer,Manager,50,0,2026-06-22,2025-08-04
+CNT-2083,ACC-1019,Emily,Benson,ebenson@crestsolutions.com,Director of Data Engineering,Technical Buyer,Director,61,0,2026-05-16,2025-03-17
+CNT-2084,ACC-1019,Amanda,Novak,anovak@crestsolutions.com,VP of Revenue Operations,Economic Buyer,Executive,69,0,2026-05-26,2025-06-26
+CNT-2085,ACC-1019,David,Miller,dmiller@crestsolutions.com,Chief Revenue Officer,Economic Buyer,Executive,63,0,2026-07-03,2025-02-14
+CNT-2086,ACC-1020,Omar,Martin,omartin@tridentcorp.com,Director of Sales Operations,Champion,Director,63,1,2026-07-22,2024-06-14
+CNT-2087,ACC-1020,Omar,Taylor,otaylor@tridentcorp.com,"Manager, Sales Operations",Influencer,Manager,85,0,2026-07-17,2024-11-06
+CNT-2088,ACC-1020,Elena,Thomas,ethomas@tridentcorp.com,Chief Operating Officer,Economic Buyer,Executive,70,0,2026-07-19,2024-03-06
+CNT-2089,ACC-1021,James,Miller,jmiller@beaconutilities.com,"Manager, Sales Operations",Influencer,Manager,74,0,2026-08-06,2024-05-26
+CNT-2090,ACC-1021,Michael,Benson,mbenson@beaconutilities.com,VP of Sales,Economic Buyer,Executive,53,0,2026-08-08,2026-01-07
+CNT-2091,ACC-1021,Grace,Sharma,gsharma@beaconutilities.com,VP of IT,Technical Buyer,Director,57,0,2026-07-14,2026-02-21
+CNT-2092,ACC-1021,Omar,Novak,onovak@beaconutilities.com,Director of GTM Systems,Champion,Director,91,1,2026-06-01,2025-06-28
+CNT-2093,ACC-1022,Nina,White,nwhite@corenetworks.com,VP of Sales,Economic Buyer,Executive,95,0,2026-07-17,2025-03-20
+CNT-2094,ACC-1022,Megan,Martin,mmartin@corenetworks.com,"Program Manager, GTM",Influencer,Manager,70,0,2026-05-17,2024-09-26
+CNT-2095,ACC-1022,David,Mendez,dmendez@corenetworks.com,VP of IT,Technical Buyer,Director,77,0,2026-05-16,2024-12-05
+CNT-2096,ACC-1022,Kevin,Mendez,kmendez@corenetworks.com,Head of RevOps,Champion,Director,89,1,2026-05-29,2024-06-02
+CNT-2097,ACC-1022,Victor,Okafor,vokafor@corenetworks.com,Enterprise Architect,Technical Buyer,Director,61,0,2026-06-25,2025-10-23
+CNT-2098,ACC-1022,Robert,Wright,rwright@corenetworks.com,"Manager, Sales Operations",Influencer,Manager,60,0,2026-07-10,2025-03-10
+CNT-2099,ACC-1023,Hannah,Chen,hchen@echelonlabs.com,Enterprise Architect,Technical Buyer,Director,42,0,2026-06-02,2026-02-24
+CNT-2100,ACC-1023,Mark,Thomas,mthomas@echelonlabs.com,Director of GTM Systems,Champion,Director,70,0,2026-07-05,2025-01-13
+CNT-2101,ACC-1023,Priya,Okafor,pokafor@echelonlabs.com,VP of Revenue Operations,Economic Buyer,Executive,54,0,2026-08-08,2025-01-23
+CNT-2102,ACC-1023,Laura,Okafor,lokafor@echelonlabs.com,"Program Manager, GTM",Influencer,Manager,66,0,2026-08-09,2026-01-22
+CNT-2103,ACC-1023,Sarah,Chen,schen@echelonlabs.com,"Senior Manager, Sales Strategy",Champion,Director,92,0,2026-05-26,2026-05-07
+CNT-2104,ACC-1024,Brian,Novak,bnovak@zenithretail.com,Director of GTM Systems,Champion,Director,67,1,2026-05-19,2024-03-03
+CNT-2105,ACC-1024,Tom,Thomas,tthomas@zenithretail.com,VP of Sales,Economic Buyer,Executive,71,0,2026-05-31,2025-05-16
+CNT-2106,ACC-1024,Victor,Novak,vnovak@zenithretail.com,"Program Manager, GTM",Influencer,Manager,41,0,2026-06-13,2025-07-21
+CNT-2107,ACC-1024,Laura,Clark,lclark@zenithretail.com,VP of IT,Technical Buyer,Director,90,0,2026-06-09,2026-04-13
+CNT-2108,ACC-1025,Michael,White,mwhite@kinetixrobotics.com,Director of GTM Systems,Champion,Director,74,1,2026-07-16,2026-01-28
+CNT-2109,ACC-1025,Emily,Mendez,emendez@kinetixrobotics.com,Enterprise Architect,Technical Buyer,Director,44,0,2026-05-24,2025-06-26
+CNT-2110,ACC-1025,Michael,Okafor,mokafor@kinetixrobotics.com,Sales Enablement Manager,Influencer,Manager,73,0,2026-07-25,2025-11-02
+CNT-2111,ACC-1025,Nina,Lewis,nlewis@kinetixrobotics.com,Chief Operating Officer,Economic Buyer,Executive,50,0,2026-06-05,2025-06-18
+CNT-2112,ACC-1025,Nina,Anderson,nanderson@kinetixrobotics.com,VP of Revenue Operations,Economic Buyer,Executive,96,0,2026-07-24,2024-03-08
+CNT-2113,ACC-1026,Hannah,Jenkins,hjenkins@optimainsurance.com,"Program Manager, GTM",Influencer,Manager,74,0,2026-06-23,2024-03-22
+CNT-2114,ACC-1026,Sophia,Rostova,srostova@optimainsurance.com,VP of IT,Technical Buyer,Director,63,0,2026-07-06,2025-04-29
+CNT-2115,ACC-1026,Sarah,Chen,schen@optimainsurance.com,Chief Revenue Officer,Economic Buyer,Executive,79,0,2026-07-27,2025-12-31
+CNT-2116,ACC-1026,Amanda,Mendez,amendez@optimainsurance.com,Director of Sales Operations,Champion,Director,72,0,2026-06-18,2024-10-01
+CNT-2117,ACC-1026,Laura,Rostova,lrostova@optimainsurance.com,Director of Sales Operations,Champion,Director,89,0,2026-08-03,2025-04-21
+CNT-2118,ACC-1026,Priya,Jackson,pjackson@optimainsurance.com,"Program Manager, GTM",Influencer,Manager,90,0,2026-08-09,2024-12-22
+CNT-2119,ACC-1027,Sophia,Taylor,staylor@veritasdata.com,Director of Data Engineering,Technical Buyer,Director,58,0,2026-05-26,2026-01-21
+CNT-2120,ACC-1027,Michael,Okafor,mokafor@veritasdata.com,Chief Revenue Officer,Economic Buyer,Executive,89,0,2026-07-25,2024-11-14
+CNT-2121,ACC-1027,Sarah,Thomas,sthomas@veritasdata.com,Director of Sales Operations,Champion,Director,48,0,2026-07-30,2025-11-06
+CNT-2122,ACC-1028,Brian,Lewis,blewis@vanguardpayments.com,Sales Enablement Manager,Influencer,Manager,83,0,2026-06-25,2026-03-11
+CNT-2123,ACC-1028,Hannah,Rostova,hrostova@vanguardpayments.com,Director of GTM Systems,Champion,Director,58,1,2026-06-16,2025-08-05
+CNT-2124,ACC-1028,Amanda,Cole,acole@vanguardpayments.com,VP of IT,Technical Buyer,Director,89,0,2026-07-24,2026-02-18
+CNT-2125,ACC-1029,Daniel,Fischer,dfischer@solsticeenergy.com,"Senior Manager, Sales Strategy",Champion,Director,46,1,2026-08-04,2025-01-06
+CNT-2126,ACC-1029,Jessica,Martin,jmartin@solsticeenergy.com,VP of Revenue Operations,Economic Buyer,Executive,71,0,2026-07-27,2026-01-04
+CNT-2127,ACC-1029,Carlos,Cole,ccole@solsticeenergy.com,VP of IT,Technical Buyer,Director,56,0,2026-08-12,2025-03-08
+CNT-2128,ACC-1030,Sophia,Okafor,sokafor@infinitelecom.com,Director of GTM Systems,Champion,Director,79,1,2026-07-14,2025-06-14
+CNT-2129,ACC-1030,Daniel,Novak,dnovak@infinitelecom.com,VP of Revenue Operations,Economic Buyer,Executive,80,0,2026-07-19,2024-05-01
+CNT-2130,ACC-1030,Rachel,Lewis,rlewis@infinitelecom.com,Head of Business Systems,Technical Buyer,Director,92,0,2026-06-02,2025-07-09
+CNT-2131,ACC-1030,Victor,Diaz,vdiaz@infinitelecom.com,"Manager, Sales Operations",Influencer,Manager,56,0,2026-06-17,2025-03-26
+CNT-2132,ACC-1031,Elena,Diaz,ediaz@pulsediagnostics.com,Director of Data Engineering,Technical Buyer,Director,49,0,2026-06-22,2024-06-10
+CNT-2133,ACC-1031,Laura,Chen,lchen@pulsediagnostics.com,"Senior Manager, Sales Strategy",Champion,Director,43,1,2026-05-19,2025-02-08
+CNT-2134,ACC-1031,Priya,Sharma,psharma@pulsediagnostics.com,Chief Revenue Officer,Economic Buyer,Executive,58,0,2026-06-23,2026-03-06
+CNT-2135,ACC-1032,Megan,Jackson,mjackson@titanindustrial.com,Enterprise Architect,Technical Buyer,Director,68,0,2026-07-30,2026-02-20
+CNT-2136,ACC-1032,Michael,Cole,mcole@titanindustrial.com,Business Analyst,Influencer,Manager,42,0,2026-05-18,2025-12-03
+CNT-2137,ACC-1032,Amanda,Adams,aadams@titanindustrial.com,Head of RevOps,Champion,Director,70,0,2026-07-07,2024-10-10
+CNT-2138,ACC-1032,Rachel,Fischer,rfischer@titanindustrial.com,VP of Revenue Operations,Economic Buyer,Executive,88,0,2026-05-20,2024-02-25
+CNT-2139,ACC-1032,Rachel,White,rwhite@titanindustrial.com,Head of Business Systems,Technical Buyer,Director,48,0,2026-08-01,2025-08-25
+CNT-2140,ACC-1033,Omar,White,owhite@prismanalytics.com,VP of IT,Technical Buyer,Director,56,0,2026-06-24,2025-01-02
+CNT-2141,ACC-1033,Sophia,Sharma,ssharma@prismanalytics.com,Chief Revenue Officer,Economic Buyer,Executive,46,0,2026-06-14,2025-08-23
+CNT-2142,ACC-1033,Megan,White,mwhite@prismanalytics.com,Sales Enablement Manager,Influencer,Manager,70,0,2026-05-22,2024-03-06
+CNT-2143,ACC-1033,Priya,Clark,pclark@prismanalytics.com,Director of Sales Operations,Champion,Director,76,1,2026-06-26,2025-06-26
+CNT-2144,ACC-1033,Sarah,Mendez,smendez@prismanalytics.com,VP of Sales,Economic Buyer,Executive,77,0,2026-08-11,2026-04-10
+CNT-2145,ACC-1033,Amanda,White,awhite@prismanalytics.com,"Manager, Sales Operations",Influencer,Manager,96,0,2026-06-18,2025-08-06
+CNT-2146,ACC-1034,Rachel,Miller,rmiller@cobaltmining.com,Business Analyst,Influencer,Manager,60,0,2026-06-25,2025-03-30
+CNT-2147,ACC-1034,Nina,Miller,nmiller@cobaltmining.com,Director of Data Engineering,Technical Buyer,Director,92,0,2026-06-07,2024-08-27
+CNT-2148,ACC-1034,Laura,Jackson,ljackson@cobaltmining.com,VP of Sales,Economic Buyer,Executive,55,0,2026-06-10,2024-10-05
+CNT-2149,ACC-1034,Tom,Chen,tchen@cobaltmining.com,"Senior Manager, Sales Strategy",Champion,Director,53,0,2026-05-20,2024-10-17
+CNT-2150,ACC-1034,Jessica,Fischer,jfischer@cobaltmining.com,Chief Operating Officer,Economic Buyer,Executive,84,0,2026-06-18,2026-06-06
+CNT-2151,ACC-1034,Hannah,Fischer,hfischer@cobaltmining.com,Director of Data Engineering,Technical Buyer,Director,58,0,2026-07-19,2024-03-26
+CNT-2152,ACC-1035,Priya,Walker,pwalker@sentrysecurity.com,Director of Data Engineering,Technical Buyer,Director,44,0,2026-08-07,2025-08-07
+CNT-2153,ACC-1035,Mark,Chen,mchen@sentrysecurity.com,Business Analyst,Influencer,Manager,53,0,2026-08-07,2026-03-08
+CNT-2154,ACC-1035,David,Rostova,drostova@sentrysecurity.com,VP of Revenue Operations,Economic Buyer,Executive,93,0,2026-06-07,2024-07-16
+CNT-2155,ACC-1035,Jessica,Clark,jclark@sentrysecurity.com,Director of GTM Systems,Champion,Director,55,0,2026-07-16,2026-01-09
+CNT-2156,ACC-1035,Elena,Harris,eharris@sentrysecurity.com,VP of Sales,Economic Buyer,Executive,60,0,2026-05-30,2024-11-19
+CNT-2157,ACC-1036,Sarah,Novak,snovak@heliospower.com,Director of GTM Systems,Champion,Director,73,0,2026-08-10,2025-01-09
+CNT-2158,ACC-1036,Hannah,White,hwhite@heliospower.com,Enterprise Architect,Technical Buyer,Director,55,0,2026-07-14,2024-03-23
+CNT-2159,ACC-1036,Sarah,Anderson,sanderson@heliospower.com,"Program Manager, GTM",Influencer,Manager,65,0,2026-07-06,2024-03-31
+CNT-2160,ACC-1036,Elena,Clark,eclark@heliospower.com,Chief Operating Officer,Economic Buyer,Executive,74,0,2026-06-06,2024-05-02
+CNT-2161,ACC-1036,Kevin,Jenkins,kjenkins@heliospower.com,Head of Business Systems,Technical Buyer,Director,93,0,2026-05-16,2025-08-14
+CNT-2162,ACC-1037,Tom,Chen,tchen@fortressbank.com,Director of Sales Operations,Champion,Director,98,1,2026-05-15,2024-02-29
+CNT-2163,ACC-1037,Mark,Miller,mmiller@fortressbank.com,Business Analyst,Influencer,Manager,72,0,2026-07-25,2024-10-08
+CNT-2164,ACC-1037,Nina,Clark,nclark@fortressbank.com,Chief Operating Officer,Economic Buyer,Executive,59,0,2026-06-10,2024-12-12
+CNT-2165,ACC-1037,Nina,Taylor,ntaylor@fortressbank.com,Director of Data Engineering,Technical Buyer,Director,70,0,2026-07-26,2025-08-04
+CNT-2166,ACC-1038,Rachel,Cole,rcole@clarityhealth.com,Director of Data Engineering,Technical Buyer,Director,75,0,2026-06-03,2026-02-08
+CNT-2167,ACC-1038,Laura,White,lwhite@clarityhealth.com,Chief Revenue Officer,Economic Buyer,Executive,70,0,2026-06-20,2025-03-31
+CNT-2168,ACC-1038,Victor,Wright,vwright@clarityhealth.com,Head of RevOps,Champion,Director,45,0,2026-07-06,2025-09-30
+CNT-2169,ACC-1039,Kevin,Taylor,ktaylor@nouveauretail.com,Enterprise Architect,Technical Buyer,Director,80,0,2026-07-30,2026-01-28
+CNT-2170,ACC-1039,Tom,Jackson,tjackson@nouveauretail.com,Chief Operating Officer,Economic Buyer,Executive,91,0,2026-05-29,2026-02-07
+CNT-2171,ACC-1039,Brian,Clark,bclark@nouveauretail.com,Head of RevOps,Champion,Director,48,1,2026-08-10,2025-02-14
+CNT-2172,ACC-1039,Daniel,White,dwhite@nouveauretail.com,Business Analyst,Influencer,Manager,56,0,2026-05-29,2025-07-07
+CNT-2173,ACC-1039,Grace,Harris,gharris@nouveauretail.com,"Senior Manager, Sales Strategy",Champion,Director,98,0,2026-06-06,2025-05-16
+CNT-2174,ACC-1040,Brian,Harris,bharris@orionaerospace.com,Head of Business Systems,Technical Buyer,Director,79,0,2026-05-16,2025-10-29
+CNT-2175,ACC-1040,Emily,White,ewhite@orionaerospace.com,VP of Revenue Operations,Economic Buyer,Executive,46,0,2026-08-04,2025-08-26
+CNT-2176,ACC-1040,Elena,Clark,eclark@orionaerospace.com,Director of GTM Systems,Champion,Director,56,0,2026-07-29,2025-03-05
+CNT-2177,ACC-1040,Carlos,Jackson,cjackson@orionaerospace.com,"Manager, Sales Operations",Influencer,Manager,53,0,2026-07-19,2025-01-04
+CNT-2178,ACC-1040,Tom,Thomas,tthomas@orionaerospace.com,Chief Revenue Officer,Economic Buyer,Executive,40,0,2026-05-15,2026-04-26
+CNT-2179,ACC-1040,Amanda,Miller,amiller@orionaerospace.com,"Manager, Sales Operations",Influencer,Manager,57,0,2026-07-26,2025-02-18
+CNT-2180,ACC-1041,Grace,Anderson,ganderson@hyperioncloud.com,"Senior Manager, Sales Strategy",Champion,Director,73,1,2026-08-03,2025-06-13
+CNT-2181,ACC-1041,Grace,Miller,gmiller@hyperioncloud.com,Sales Enablement Manager,Influencer,Manager,70,0,2026-06-21,2024-03-17
+CNT-2182,ACC-1041,Priya,Jackson,pjackson@hyperioncloud.com,Chief Operating Officer,Economic Buyer,Executive,51,0,2026-08-06,2024-02-29
+CNT-2183,ACC-1041,Nina,Rostova,nrostova@hyperioncloud.com,Head of Business Systems,Technical Buyer,Director,95,0,2026-08-12,2024-06-09
+CNT-2184,ACC-1042,Mark,Fischer,mfischer@astralmedia.com,"Manager, Sales Operations",Influencer,Manager,68,0,2026-07-15,2025-01-19
+CNT-2185,ACC-1042,Daniel,Novak,dnovak@astralmedia.com,Head of Business Systems,Technical Buyer,Director,46,0,2026-08-04,2024-03-10
+CNT-2186,ACC-1042,Michael,Miller,mmiller@astralmedia.com,Director of Sales Operations,Champion,Director,85,1,2026-06-20,2025-12-14
+CNT-2187,ACC-1042,Robert,Thomas,rthomas@astralmedia.com,Chief Operating Officer,Economic Buyer,Executive,48,0,2026-07-25,2024-07-10
+CNT-2188,ACC-1042,Omar,White,owhite@astralmedia.com,"Manager, Sales Operations",Influencer,Manager,83,0,2026-05-20,2024-05-22
+CNT-2189,ACC-1042,Sarah,Sharma,ssharma@astralmedia.com,VP of Sales,Economic Buyer,Executive,70,0,2026-07-14,2025-06-22
+CNT-2190,ACC-1043,Daniel,Jenkins,djenkins@summitfinancial.com,Sales Enablement Manager,Influencer,Manager,52,0,2026-07-21,2026-01-11
+CNT-2191,ACC-1043,Tom,Sharma,tsharma@summitfinancial.com,Director of GTM Systems,Champion,Director,74,1,2026-07-26,2025-07-25
+CNT-2192,ACC-1043,Michael,Sharma,msharma@summitfinancial.com,Chief Operating Officer,Economic Buyer,Executive,75,0,2026-08-06,2025-04-26
+CNT-2193,ACC-1043,Rachel,Anderson,randerson@summitfinancial.com,Enterprise Architect,Technical Buyer,Director,44,0,2026-05-21,2024-05-18
+CNT-2194,ACC-1043,Sophia,Clark,sclark@summitfinancial.com,Enterprise Architect,Technical Buyer,Director,42,0,2026-07-08,2026-03-31
+CNT-2195,ACC-1043,Tom,Anderson,tanderson@summitfinancial.com,Director of Data Engineering,Technical Buyer,Director,87,0,2026-06-21,2024-02-29
+CNT-2196,ACC-1044,David,Okafor,dokafor@vectorbiotech.com,Enterprise Architect,Technical Buyer,Director,46,0,2026-06-27,2024-10-09
+CNT-2197,ACC-1044,Grace,Sharma,gsharma@vectorbiotech.com,"Program Manager, GTM",Influencer,Manager,87,0,2026-07-25,2024-07-31
+CNT-2198,ACC-1044,Priya,Jackson,pjackson@vectorbiotech.com,Director of Sales Operations,Champion,Director,72,1,2026-06-14,2024-06-07
+CNT-2199,ACC-1044,Kevin,Novak,knovak@vectorbiotech.com,VP of Sales,Economic Buyer,Executive,60,0,2026-05-20,2024-05-19
+CNT-2200,ACC-1044,Laura,Okafor,lokafor@vectorbiotech.com,VP of IT,Technical Buyer,Director,87,0,2026-07-20,2026-04-28
+CNT-2201,ACC-1044,James,Diaz,jdiaz@vectorbiotech.com,Chief Revenue Officer,Economic Buyer,Executive,52,0,2026-08-10,2024-05-04
+CNT-2202,ACC-1045,David,Chen,dchen@eclipsesystems.com,Business Analyst,Influencer,Manager,85,0,2026-08-11,2025-08-09
+CNT-2203,ACC-1045,Elena,Mendez,emendez@eclipsesystems.com,Enterprise Architect,Technical Buyer,Director,65,0,2026-08-11,2025-01-25
+CNT-2204,ACC-1045,Omar,Lewis,olewis@eclipsesystems.com,Director of Sales Operations,Champion,Director,87,0,2026-07-16,2025-10-08
+CNT-2205,ACC-1045,Amanda,Cole,acole@eclipsesystems.com,VP of Revenue Operations,Economic Buyer,Executive,80,0,2026-07-30,2026-05-07
+CNT-2206,ACC-1045,Rachel,Cole,rcole@eclipsesystems.com,Chief Operating Officer,Economic Buyer,Executive,66,0,2026-06-11,2025-06-20
+CNT-2207,ACC-1045,Michael,Fischer,mfischer@eclipsesystems.com,Enterprise Architect,Technical Buyer,Director,79,0,2026-06-07,2025-01-15
+CNT-2208,ACC-1046,Tom,Thomas,tthomas@matrixlogistics.com,Head of RevOps,Champion,Director,46,1,2026-07-05,2026-02-04
+CNT-2209,ACC-1046,Victor,Taylor,vtaylor@matrixlogistics.com,Head of Business Systems,Technical Buyer,Director,65,0,2026-07-29,2025-04-04
+CNT-2210,ACC-1046,Laura,Okafor,lokafor@matrixlogistics.com,Sales Enablement Manager,Influencer,Manager,58,0,2026-08-10,2025-08-09
+CNT-2211,ACC-1046,Amanda,Mendez,amendez@matrixlogistics.com,Chief Revenue Officer,Economic Buyer,Executive,56,0,2026-06-24,2025-08-25
+CNT-2212,ACC-1046,Elena,Rostova,erostova@matrixlogistics.com,Chief Revenue Officer,Economic Buyer,Executive,61,0,2026-06-28,2024-05-03
+CNT-2213,ACC-1047,Elena,Jenkins,ejenkins@northwindfoods.com,"Manager, Sales Operations",Influencer,Manager,85,0,2026-08-02,2025-01-16
+CNT-2214,ACC-1047,Victor,Walker,vwalker@northwindfoods.com,Chief Revenue Officer,Economic Buyer,Executive,51,0,2026-06-16,2024-08-20
+CNT-2215,ACC-1047,Rachel,Mendez,rmendez@northwindfoods.com,Director of GTM Systems,Champion,Director,80,1,2026-05-20,2025-06-12
+CNT-2216,ACC-1047,Megan,Clark,mclark@northwindfoods.com,Enterprise Architect,Technical Buyer,Director,89,0,2026-07-16,2025-08-21
+CNT-2217,ACC-1048,Sophia,Miller,smiller@ironcladinsurance.com,"Senior Manager, Sales Strategy",Champion,Director,90,1,2026-06-01,2026-05-21
+CNT-2218,ACC-1048,David,Sharma,dsharma@ironcladinsurance.com,VP of Sales,Economic Buyer,Executive,94,0,2026-05-16,2025-06-29
+CNT-2219,ACC-1048,Emily,Walker,ewalker@ironcladinsurance.com,Sales Enablement Manager,Influencer,Manager,47,0,2026-07-14,2025-12-05
+CNT-2220,ACC-1048,Megan,Rostova,mrostova@ironcladinsurance.com,Enterprise Architect,Technical Buyer,Director,57,0,2026-06-26,2025-01-15
+CNT-2221,ACC-1048,Sarah,Cole,scole@ironcladinsurance.com,Director of Data Engineering,Technical Buyer,Director,41,0,2026-07-02,2024-12-08
+CNT-2222,ACC-1048,Brian,Harris,bharris@ironcladinsurance.com,Director of Data Engineering,Technical Buyer,Director,90,0,2026-06-08,2024-05-01
+CNT-2223,ACC-1049,Daniel,Adams,dadams@silverlinetelecom.com,Chief Operating Officer,Economic Buyer,Executive,68,0,2026-08-04,2025-06-18
+CNT-2224,ACC-1049,James,Wright,jwright@silverlinetelecom.com,Head of Business Systems,Technical Buyer,Director,76,0,2026-05-20,2025-06-01
+CNT-2225,ACC-1049,Emily,Walker,ewalker@silverlinetelecom.com,"Program Manager, GTM",Influencer,Manager,58,0,2026-05-15,2025-02-28
+CNT-2226,ACC-1050,Victor,Rostova,vrostova@redwoodcapital.com,Director of Data Engineering,Technical Buyer,Director,83,0,2026-07-18,2026-01-04
+CNT-2227,ACC-1050,Carlos,Chen,cchen@redwoodcapital.com,Director of GTM Systems,Champion,Director,45,1,2026-08-10,2026-04-02
+CNT-2228,ACC-1050,Michael,Fischer,mfischer@redwoodcapital.com,Business Analyst,Influencer,Manager,82,0,2026-07-17,2024-12-09
+CNT-2229,ACC-1050,Robert,Cole,rcole@redwoodcapital.com,VP of Revenue Operations,Economic Buyer,Executive,46,0,2026-07-27,2025-09-13
+CNT-2230,ACC-1050,Megan,Clark,mclark@redwoodcapital.com,Sales Enablement Manager,Influencer,Manager,59,0,2026-07-15,2026-02-24
+CNT-2231,ACC-1051,Omar,Jenkins,ojenkins@bluepeaksoftware.com,"Program Manager, GTM",Influencer,Manager,51,0,2026-05-16,2026-05-14
+CNT-2232,ACC-1051,Kevin,Diaz,kdiaz@bluepeaksoftware.com,VP of Revenue Operations,Economic Buyer,Executive,51,0,2026-06-21,2025-10-11
+CNT-2233,ACC-1051,Mark,Clark,mclark@bluepeaksoftware.com,Director of GTM Systems,Champion,Director,63,1,2026-06-08,2024-09-12
+CNT-2234,ACC-1051,Rachel,Sharma,rsharma@bluepeaksoftware.com,Enterprise Architect,Technical Buyer,Director,50,0,2026-06-18,2024-04-27
+CNT-2235,ACC-1052,Sarah,Jenkins,sjenkins@graniteutilities.com,Chief Operating Officer,Economic Buyer,Executive,81,0,2026-08-05,2026-01-19
+CNT-2236,ACC-1052,Sophia,Miller,smiller@graniteutilities.com,Enterprise Architect,Technical Buyer,Director,71,0,2026-05-22,2025-05-20
+CNT-2237,ACC-1052,Sarah,Walker,swalker@graniteutilities.com,Head of RevOps,Champion,Director,96,1,2026-06-05,2024-07-04
+CNT-2238,ACC-1053,Mark,Fischer,mfischer@meridianhealth.com,Chief Operating Officer,Economic Buyer,Executive,82,0,2026-06-04,2024-10-28
+CNT-2239,ACC-1053,Jessica,Diaz,jdiaz@meridianhealth.com,Head of RevOps,Champion,Director,75,1,2026-05-21,2025-08-21
+CNT-2240,ACC-1053,Emily,Mendez,emendez@meridianhealth.com,Sales Enablement Manager,Influencer,Manager,90,0,2026-07-27,2025-09-29
+CNT-2241,ACC-1053,Jessica,Okafor,jokafor@meridianhealth.com,Director of Data Engineering,Technical Buyer,Director,72,0,2026-05-29,2025-02-12
+CNT-2242,ACC-1053,Amanda,Jackson,ajackson@meridianhealth.com,Sales Enablement Manager,Influencer,Manager,71,0,2026-07-20,2026-01-07
+CNT-2243,ACC-1054,Carlos,Lewis,clewis@copperfieldretail.com,Director of Data Engineering,Technical Buyer,Director,63,0,2026-07-03,2026-04-30
+CNT-2244,ACC-1054,Daniel,Mendez,dmendez@copperfieldretail.com,"Program Manager, GTM",Influencer,Manager,54,0,2026-07-15,2026-04-08
+CNT-2245,ACC-1054,Priya,White,pwhite@copperfieldretail.com,VP of Sales,Economic Buyer,Executive,54,0,2026-07-30,2025-04-10
+CNT-2246,ACC-1055,Omar,Harris,oharris@lakeshoremanufacturing.com,Head of Business Systems,Technical Buyer,Director,41,0,2026-06-29,2025-05-25
+CNT-2247,ACC-1055,Elena,Cole,ecole@lakeshoremanufacturing.com,"Senior Manager, Sales Strategy",Champion,Director,93,0,2026-05-17,2024-11-13
+CNT-2248,ACC-1055,David,Anderson,danderson@lakeshoremanufacturing.com,VP of Sales,Economic Buyer,Executive,64,0,2026-06-12,2025-01-25
+CNT-2249,ACC-1055,Hannah,Mendez,hmendez@lakeshoremanufacturing.com,"Manager, Sales Operations",Influencer,Manager,95,0,2026-06-13,2024-10-13
+CNT-2250,ACC-1055,Rachel,White,rwhite@lakeshoremanufacturing.com,"Program Manager, GTM",Influencer,Manager,65,0,2026-07-15,2024-03-28
+CNT-2251,ACC-1056,James,Anderson,janderson@ridgelinedata.com,"Manager, Sales Operations",Influencer,Manager,55,0,2026-06-14,2025-03-07
+CNT-2252,ACC-1056,Hannah,Rostova,hrostova@ridgelinedata.com,Chief Revenue Officer,Economic Buyer,Executive,81,0,2026-07-03,2025-08-20
+CNT-2253,ACC-1056,Brian,Jackson,bjackson@ridgelinedata.com,Director of GTM Systems,Champion,Director,92,1,2026-06-02,2025-06-23
+CNT-2254,ACC-1056,Sarah,Sharma,ssharma@ridgelinedata.com,Head of Business Systems,Technical Buyer,Director,87,0,2026-06-19,2024-05-22
+CNT-2255,ACC-1056,David,Wright,dwright@ridgelinedata.com,VP of Sales,Economic Buyer,Executive,92,0,2026-07-22,2025-04-24
+CNT-2256,ACC-1057,Emily,Jenkins,ejenkins@foxglovelabs.com,Director of Sales Operations,Champion,Director,74,1,2026-06-15,2025-08-22
+CNT-2257,ACC-1057,David,White,dwhite@foxglovelabs.com,Head of Business Systems,Technical Buyer,Director,52,0,2026-07-20,2024-12-08
+CNT-2258,ACC-1057,Kevin,Harris,kharris@foxglovelabs.com,Sales Enablement Manager,Influencer,Manager,96,0,2026-06-22,2024-03-31
+CNT-2259,ACC-1058,Nina,Chen,nchen@harborviewenergy.com,Director of Sales Operations,Champion,Director,77,1,2026-05-26,2025-05-31
+CNT-2260,ACC-1058,Megan,Jackson,mjackson@harborviewenergy.com,Chief Revenue Officer,Economic Buyer,Executive,94,0,2026-07-04,2024-09-04
+CNT-2261,ACC-1058,Megan,Fischer,mfischer@harborviewenergy.com,Business Analyst,Influencer,Manager,87,0,2026-07-23,2024-03-11
+CNT-2262,ACC-1058,Elena,Okafor,eokafor@harborviewenergy.com,Head of Business Systems,Technical Buyer,Director,93,0,2026-06-03,2025-03-18
+CNT-2263,ACC-1059,Emily,Okafor,eokafor@stonebridgebank.com,Head of Business Systems,Technical Buyer,Director,46,0,2026-07-13,2024-11-15
+CNT-2264,ACC-1059,Mark,Benson,mbenson@stonebridgebank.com,Chief Operating Officer,Economic Buyer,Executive,70,0,2026-07-27,2025-08-26
+CNT-2265,ACC-1059,Omar,Wright,owright@stonebridgebank.com,"Program Manager, GTM",Influencer,Manager,85,0,2026-05-16,2026-04-18
+CNT-2266,ACC-1059,Omar,Novak,onovak@stonebridgebank.com,Director of GTM Systems,Champion,Director,46,1,2026-06-04,2025-01-25
+CNT-2267,ACC-1059,Rachel,Lewis,rlewis@stonebridgebank.com,Chief Operating Officer,Economic Buyer,Executive,64,0,2026-06-23,2026-01-05
+CNT-2268,ACC-1059,Sarah,Diaz,sdiaz@stonebridgebank.com,Chief Revenue Officer,Economic Buyer,Executive,42,0,2026-06-22,2025-04-24
+CNT-2269,ACC-1060,James,Sharma,jsharma@wavelengthmedia.com,Chief Revenue Officer,Economic Buyer,Executive,81,0,2026-06-26,2024-06-09
+CNT-2270,ACC-1060,Kevin,Novak,knovak@wavelengthmedia.com,"Manager, Sales Operations",Influencer,Manager,71,0,2026-08-07,2026-05-15
+CNT-2271,ACC-1060,Nina,Miller,nmiller@wavelengthmedia.com,Director of Sales Operations,Champion,Director,88,0,2026-06-24,2024-07-12
+CNT-2272,ACC-1060,Carlos,Cole,ccole@wavelengthmedia.com,VP of IT,Technical Buyer,Director,54,0,2026-08-09,2024-05-27

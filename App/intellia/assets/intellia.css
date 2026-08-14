@@ -1,0 +1,675 @@
+/* Intellia
+ * ---------------------------------------------------------------------------
+ * Selector policy (this is the maintainability contract):
+ *   Tier 1  .st-key-*      documented API from st.container(key=). 90% of styling.
+ *   Tier 2  [data-testid]  only inside the fenced blocks below. Re-verify on upgrade.
+ *   Tier 3  .css-1v0mbdj   BANNED. Emotion hashes change on patch releases.
+ * The :root token block is injected ahead of this file by theme/tokens.py.
+ * NOTE: never write a literal style tag inside a comment here. The sanitiser
+ * that processes injected CSS drops the entire block when it sees one.
+ * ------------------------------------------------------------------------ */
+
+/* ===== base ============================================================== */
+
+html { scroll-behavior: smooth; }
+
+body, .stApp {
+  background: var(--canvas);
+  color: var(--text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- STREAMLIT-INTERNAL SELECTORS: re-verify on upgrade ------------------ */
+[data-testid="stAppDeployButton"],
+[data-testid="stMainMenu"],
+[data-testid="stStatusWidget"],
+[data-testid="stToolbarActions"],
+[data-testid="stDecoration"],
+[data-testid="stSidebarHeader"],
+[data-testid="stSidebarCollapsedControl"] svg,
+footer { display: none !important; }        /* beats Streamlit's own display rule */
+
+[data-testid="stHeader"] { background: transparent; height: 0; }
+[data-testid="stMainBlockContainer"] {
+  padding: 1.1rem 1.6rem 3rem;
+  max-width: 1280px;
+}
+[data-testid="stToast"] {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; box-shadow: var(--shadow-md); font-size: 12.5px;
+}
+[data-testid="stElementContainer"]:has(> [data-testid="stHtml"]) { margin-bottom: 0; }
+[data-testid="stVerticalBlock"] { gap: .35rem; }
+/* --- end internal selectors ---------------------------------------------- */
+
+::selection { background: var(--accent-ring); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* ===== typography primitives ============================================ */
+
+.ix-eyebrow {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--text-faint); margin: 0;
+}
+.ix-meta { font-size: 11.5px; color: var(--text-faint); letter-spacing: .01em; margin: 0; }
+
+
+/* ===== buttons ==========================================================
+ * One compact geometry for every button in the app; type only changes skin.
+ *
+ * SPECIFICITY NOTE: the base skins below are matched on `.stButton
+ * button[kind="..."]`, which is one class plus one attribute plus a type. Any
+ * rule that re-skins a button in a keyed container must therefore also carry
+ * `[kind="secondary"]`, or it loses to the base rule and silently does nothing.
+ * ======================================================================== */
+
+.stButton button, .stDownloadButton button, [data-testid="stPopoverButton"] {
+  font-size: 12px; font-weight: 500; letter-spacing: .005em;
+  padding: .22rem .6rem; min-height: 27px; border-radius: 7px;
+  transition: background .14s ease, border-color .14s ease, color .14s ease;
+}
+.stButton button[kind="primary"] {
+  background: var(--accent); border: 1px solid var(--accent); color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.stButton button[kind="primary"]:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+.stButton button[kind="secondary"], [data-testid="stPopoverButton"] {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary);
+}
+.stButton button[kind="secondary"]:hover, [data-testid="stPopoverButton"]:hover {
+  border-color: var(--border-strong); color: var(--text-primary); background: var(--surface-sunken);
+}
+.stButton button[kind="tertiary"] {
+  color: var(--text-muted); padding: .25rem .45rem; min-height: 26px;
+}
+.stButton button[kind="tertiary"]:hover { color: var(--accent); background: var(--accent-wash); }
+
+/* The control strip: icons only, tight to the corner. */
+div[class*="st-key-row-tools-"] { gap: 0 !important; flex: 0 0 auto; }
+
+/* Square icon buttons. */
+div[class*="st-key-icon-"] button[kind="secondary"],
+div[class*="st-key-icon-"] [data-testid="stPopoverButton"] {
+  width: 24px; min-width: 24px; height: 24px; min-height: 24px;
+  padding: 0; border-radius: 6px; font-size: 12px; line-height: 1;
+  color: var(--text-faint); background: transparent; border: 1px solid transparent;
+}
+div[class*="st-key-icon-"] [data-testid="stIconMaterial"] { font-size: 15px; }
+div[class*="st-key-icon-"] button[kind="secondary"]:hover,
+div[class*="st-key-icon-"] [data-testid="stPopoverButton"]:hover {
+  color: var(--accent); background: var(--accent-wash); border-color: var(--border);
+}
+/* Popover buttons carry a disclosure caret. On an icon trigger it is noise. */
+div[class*="st-key-icon-"] [data-testid="stPopoverButton"] svg { display: none; }
+
+/* ===== popovers ========================================================= */
+
+[data-testid="stPopoverBody"] {
+  width: 300px; padding: 10px 12px 12px;
+  border-radius: 12px; box-shadow: var(--shadow-lg);
+}
+[data-testid="stPopoverBody"] .stButton button {
+  justify-content: flex-start; text-align: left; font-weight: 500;
+}
+.ix-pop-title {
+  font-size: 12.5px; font-weight: 600; color: var(--text-primary); margin: 0 0 8px;
+}
+
+/* ===== card system ======================================================
+ * .ix-card (pure-HTML body) and .st-key-card-* (hybrid shell) share ONE rule,
+ * so the two paths are pixel-identical by construction. CSS draws the border;
+ * st.container(border=False) so it is never drawn twice.
+ * ======================================================================== */
+
+.ix-card,
+div[class*="st-key-card-"] {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px 8px;
+  box-shadow: var(--shadow-sm);
+}
+div[class*="st-key-card-"] { margin-bottom: 2px; }
+div[class*="st-key-card-"]:hover { border-color: var(--border-strong); }
+
+.ix-card-title {
+  font-size: 13.5px; font-weight: 600; color: var(--text-primary);
+  margin: 0; letter-spacing: -.005em; line-height: 1.3;
+}
+.ix-card-sub { font-size: 11.5px; color: var(--text-muted); margin: 2px 0 0; line-height: 1.4; }
+.ix-card-foot {
+  font-size: 10px; color: var(--text-faint); letter-spacing: .01em;
+  border-top: 1px solid var(--border); padding-top: 5px; margin: 7px 0 0;
+  display: flex; justify-content: space-between; gap: 10px;
+}
+.ix-card-foot span:last-child { white-space: nowrap; }
+
+/* --- STREAMLIT-INTERNAL SELECTORS: re-verify on upgrade ------------------
+ * A horizontal container lays out its children as flex items, but Streamlit
+ * stamps width:100% on each one, so any row with more than one child wraps and
+ * spreads. Every row in this app is a "tight row": children take their content
+ * width and the row never wraps. Rows keyed row-head-* additionally let their
+ * FIRST child absorb the slack, which is what pins a card menu to the right
+ * edge without a magic margin.
+ */
+div[class*="st-key-row-"] { flex-wrap: nowrap; gap: .3rem; }
+div[class*="st-key-row-"] > [data-testid="stLayoutWrapper"],
+div[class*="st-key-row-"] > [data-testid="stElementContainer"] {
+  width: auto !important; flex: 0 0 auto; min-width: 0;
+}
+div[class*="st-key-row-head-"] > [data-testid="stElementContainer"]:first-child,
+div[class*="st-key-row-exec-"] > [data-testid="stElementContainer"]:first-child {
+  flex: 1 1 auto; width: auto !important;
+}
+div[class*="st-key-row-head-"] { align-items: flex-start; }
+/* --- end internal selectors ---------------------------------------------- */
+
+/* ===== badges & chips =================================================== */
+
+.ix-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 10px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase;
+  padding: 2px 7px 2px 6px; border-radius: 5px;
+  border: 1px solid var(--border); background: var(--surface-sunken);
+  color: var(--text-muted); white-space: nowrap;
+}
+.ix-badge i { width: 5px; height: 5px; border-radius: 50%; display: inline-block; }
+.ix-badge--priority    i { background: var(--accent); }
+.ix-badge--decision    i { background: var(--accent); }
+.ix-badge--opportunity i { background: var(--good); }
+.ix-badge--risk        i { background: var(--risk); }
+.ix-badge--followup    i { background: var(--text-faint); }
+
+.ix-chip {
+  display: inline-block; font-size: 10.5px; font-weight: 500;
+  padding: 1px 7px; border-radius: 999px;
+  background: var(--surface-sunken); color: var(--text-muted);
+  border: 1px solid var(--border); white-space: nowrap;
+}
+.ix-chip--good    { color: var(--good);    background: var(--good-wash);    border-color: transparent; }
+.ix-chip--caution { color: var(--caution); background: var(--caution-wash); border-color: transparent; }
+.ix-chip--risk    { color: var(--risk);    background: var(--risk-wash);    border-color: transparent; }
+.ix-chip--accent  { color: var(--accent);  background: var(--accent-wash);  border-color: transparent; }
+.ix-count {
+  display: inline-block; min-width: 18px; text-align: center;
+  font-size: 10.5px; font-weight: 600; font-variant-numeric: tabular-nums;
+  padding: 1px 6px; border-radius: 999px;
+  background: var(--accent-wash); color: var(--accent);
+}
+
+/* ===== left navigation ==================================================
+ * Fixed dark navy in both themes. It is chrome, not canvas.
+ * ======================================================================== */
+
+[data-testid="stSidebar"] {
+  background: var(--nav-bg); border-right: 1px solid var(--nav-border);
+  width: 252px !important; min-width: 252px !important;
+}
+[data-testid="stSidebarContent"] { padding: 14px 12px 10px; }
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] { gap: .2rem; }
+[data-testid="stSidebar"] hr { border-color: var(--nav-border); margin: 10px 0; }
+
+.ix-wordmark { display: flex; align-items: center; gap: 8px; padding: 2px 6px 12px; }
+.ix-wordmark .ix-mark { color: var(--nav-accent); }
+.ix-wordmark-name {
+  font-size: 17px; font-weight: 600; letter-spacing: -.02em; color: var(--nav-text);
+}
+.ix-wordmark-sub {
+  font-size: 9.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--nav-faint); margin-left: auto; padding-top: 4px;
+}
+.ix-nav-label {
+  font-size: 9.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--nav-faint); margin: 14px 0 4px; padding: 0 8px;
+}
+
+/* Nav rows are real buttons so they can carry on_click; the skin makes them
+   read as list items rather than controls. */
+[data-testid="stSidebar"] .stButton button {
+  width: 100%; justify-content: flex-start; text-align: left;
+  background: transparent; border: 1px solid transparent; color: var(--nav-muted);
+  font-size: 13px; font-weight: 500; padding: .34rem .5rem; min-height: 32px;
+  border-radius: 8px;
+}
+[data-testid="stSidebar"] .stButton button:hover {
+  background: var(--nav-hover); color: var(--nav-text); border-color: transparent;
+}
+[data-testid="stSidebar"] .stButton button[kind="primary"] {
+  background: var(--nav-surface); color: var(--nav-text); font-weight: 600;
+  border: 1px solid var(--nav-border); box-shadow: none;
+}
+[data-testid="stSidebar"] .stButton button[kind="primary"]:hover { background: #17335A; }
+[data-testid="stSidebar"] div[class*="st-key-nav-on-"] button {
+  background: var(--nav-active); color: var(--nav-text); font-weight: 600;
+}
+[data-testid="stSidebar"] div[class*="st-key-hist-"] button {
+  font-size: 12px; font-weight: 400; color: var(--nav-muted); min-height: 28px;
+  padding: .2rem .5rem;
+}
+
+[data-testid="stSidebar"] [data-testid="stTextInputRootElement"] {
+  background: rgba(255,255,255,.06); border: 1px solid var(--nav-border);
+  border-radius: 8px;
+}
+[data-testid="stSidebar"] input {
+  color: var(--nav-text) !important; font-size: 12.5px;
+}
+[data-testid="stSidebar"] input::placeholder { color: var(--nav-faint); }
+
+.ix-nav-empty { font-size: 11.5px; color: var(--nav-faint); padding: 4px 8px 2px; margin: 0; }
+.ix-nav-note { font-size: 10.5px; color: var(--nav-faint); padding: 0 8px; margin: 2px 0 0; }
+
+/* --- STREAMLIT-INTERNAL SELECTORS: re-verify on upgrade ------------------
+ * Pin the bottom group (updates, profile, support) to the bottom edge so the
+ * chat list gets all the slack. Every level from the rail down has to be a
+ * stretching flex column first, or `margin-top: auto` has no space to take:
+ * two of the levels are plain blocks by default and one is an unnamed wrapper,
+ * reached by child position rather than by its emotion hash.
+ */
+[data-testid="stSidebarContent"] {
+  display: flex; flex-direction: column; min-height: 100%;
+}
+[data-testid="stSidebarUserContent"],
+[data-testid="stSidebarUserContent"] > div {
+  display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0;
+}
+[data-testid="stLayoutWrapper"]:has(> div[class*="st-key-nav-bottom"]) {
+  margin-top: auto;
+}
+.st-key-nav-bottom { padding-top: 12px; }
+/* Profile and support sit under the updates block, hard against the foot of the
+   rail: there is space above them, so they use it. */
+.st-key-nav-profile { margin-top: 14px; }
+/* --- end internal selectors ---------------------------------------------- */
+
+/* Profile pinned to the foot of the rail. */
+.st-key-nav-profile { margin-top: 6px; border-top: 1px solid var(--nav-border); padding-top: 8px; }
+.ix-nav-support {
+  font-size: 10.5px; color: var(--nav-muted); line-height: 1.5;
+  margin: 8px 0 2px; padding: 8px 8px 0; border-top: 1px solid var(--nav-border);
+}
+.ix-nav-support span { color: var(--nav-faint); }
+[data-testid="stSidebar"] .st-key-nav-profile button {
+  min-height: 42px; font-size: 12.5px; color: var(--nav-text);
+}
+.ix-nav-update {
+  display: flex; align-items: baseline; gap: 6px;
+  padding: 2px 8px; border-radius: 6px;
+}
+.ix-nav-update:hover { background: var(--nav-hover); }
+.ix-nav-update b {
+  font-size: 11.5px; font-weight: 500; color: var(--nav-muted);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.ix-nav-update i {
+  font-style: normal; font-size: 8px; font-weight: 600; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--nav-muted); margin-left: auto;
+  background: rgba(255,255,255,.08); border-radius: 5px; padding: 1px 5px;
+  line-height: 1.5; flex: none;
+}
+[data-testid="stSidebar"] .st-key-nav-updates-link button[kind="secondary"] {
+  font-size: 10px; min-height: 18px; padding: .05rem .4rem; width: auto;
+  color: var(--nav-faint);
+}
+[data-testid="stSidebar"] .st-key-nav-updates-link [data-testid="stIconMaterial"] {
+  font-size: 12px;
+}
+
+/* ===== greeting + hero ask ============================================== */
+
+.ix-greet { margin: 0 0 10px; }
+.ix-greet-date {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--text-faint); margin: 0;
+}
+.ix-greet-title {
+  font-size: 25px; font-weight: 600; letter-spacing: -.028em;
+  color: var(--text-primary); margin: 4px 0 2px; line-height: 1.15;
+}
+.ix-greet-sub { font-size: 13.5px; color: var(--text-muted); margin: 0; }
+
+.st-key-hero-ask { margin: 0 0 6px; }
+.st-key-hero-ask [data-testid="stChatInput"] {
+  border-radius: 14px; border: 1px solid var(--border);
+  background: var(--surface); box-shadow: var(--shadow-md);
+}
+.st-key-hero-ask [data-testid="stChatInput"]:focus-within {
+  border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-ring);
+}
+.st-key-hero-ask [data-testid="stChatInputTextArea"] { font-size: 13.5px; }
+.st-key-hero-ask [data-testid="stChatInputSubmitButton"] { border-radius: 9px; }
+
+div[class*="st-key-sugg-"] button[kind="secondary"] {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text-secondary);
+  font-size: 12px; border-radius: 999px; padding: .22rem .7rem; min-height: 28px;
+}
+div[class*="st-key-sugg-"] button[kind="secondary"]:hover {
+  border-color: var(--accent); color: var(--accent); background: var(--accent-wash);
+}
+
+/* ===== compose toolbar ================================================== */
+
+.st-key-ctl-compose { padding: 7px 10px; margin: 8px 0 10px; }
+.ix-tool-head {
+  font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--text-faint); margin: 0; padding-right: 4px; white-space: nowrap;
+}
+div[class*="st-key-tool-"] button[kind="secondary"] {
+  min-width: 36px; height: 32px; min-height: 32px; padding: 0 .55rem;
+  border-radius: 8px; font-size: 14px; line-height: 1;
+  background: transparent; border: 1px solid transparent; color: var(--text-muted);
+}
+div[class*="st-key-tool-"] button[kind="secondary"]:hover {
+  background: var(--surface-sunken); border-color: var(--border); color: var(--text-primary);
+}
+div[class*="st-key-tool-on-"] button[kind="secondary"] {
+  background: var(--accent-wash); border-color: var(--accent-ring); color: var(--accent);
+}
+.ix-tool-div { width: 1px; height: 20px; background: var(--border); margin: 0 2px; }
+.st-key-row-compose-bar > [data-testid="stElementContainer"]:last-child { margin-left: auto; }
+
+.ix-tile-group {
+  font-size: 10px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--text-faint); margin: 10px 0 6px;
+}
+div[class*="st-key-tile-"] button[kind="secondary"] {
+  width: 100%; justify-content: flex-start; text-align: left; gap: 8px;
+  border-radius: 9px; font-size: 12px; font-weight: 500; min-height: 34px;
+  padding: .3rem .6rem;
+  background: var(--surface-sunken); border: 1px solid transparent; color: var(--text-muted);
+}
+div[class*="st-key-tile-"] button[kind="secondary"]:hover { border-color: var(--border-strong); color: var(--text-primary); }
+div[class*="st-key-tile-on-"] button[kind="secondary"] {
+  background: var(--accent-wash); border-color: var(--accent-ring); color: var(--accent);
+  font-weight: 600;
+}
+
+/* ===== daily brief ====================================================== */
+
+.st-key-card-brief { border-left: 2px solid var(--accent); }
+.ix-brief-head {
+  font-size: 14px; font-weight: 600; color: var(--text-primary);
+  margin: 6px 0 2px; line-height: 1.3; letter-spacing: -.01em;
+}
+.ix-brief-sum { font-size: 12.5px; color: var(--text-secondary); margin: 0; line-height: 1.5; }
+.ix-brief-list { margin: 7px 0 0; }
+.ix-brief-item {
+  display: grid; grid-template-columns: 96px 1fr; gap: 10px;
+  padding: 5px 0; align-items: baseline;
+}
+.ix-brief-item + .ix-brief-item { border-top: 1px solid var(--border); }
+.ix-brief-text { font-size: 12.5px; color: var(--text-secondary); margin: 0; line-height: 1.5; }
+.ix-brief-text b { color: var(--text-primary); font-weight: 600; }
+
+/* ===== list rows (meetings / actions) =================================== */
+
+.ix-list-head {
+  display: flex; align-items: center; gap: 7px; margin: 0 0 6px;
+}
+/* One rule for every scrolling list row. A top border on all of them (rather
+   than a sibling selector) survives whatever wrappers Streamlit nests them in. */
+div[class*="st-key-lrow-"] {
+  padding: 7px 2px 5px; border-top: 1px solid var(--border);
+  gap: .05rem; border-radius: 0;
+}
+div[class*="st-key-lrow-"]:first-of-type { border-top: none; padding-top: 2px; }
+.ix-row-top { display: flex; align-items: baseline; gap: 8px; }
+.ix-row-time {
+  font-size: 11px; font-weight: 600; color: var(--accent);
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.ix-row-title {
+  font-size: 12.5px; font-weight: 600; color: var(--text-primary);
+  line-height: 1.35; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.ix-row-meta { font-size: 11px; color: var(--text-faint); margin: 3px 0 0; }
+.ix-row-body {
+  font-size: 11.5px; color: var(--text-secondary); margin: 4px 0 0; line-height: 1.45;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.ix-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex: none; }
+.ix-dot--High   { background: var(--risk); }
+.ix-dot--Medium { background: var(--caution); }
+.ix-dot--Low    { background: var(--text-faint); }
+.ix-dot--done   { background: var(--good); }
+
+/* Row action buttons sit tight to the row, never full width. */
+div[class*="st-key-row-act-"] { gap: .2rem; margin-top: 3px; }
+div[class*="st-key-row-act-"] button[kind="primary"],
+div[class*="st-key-row-act-"] button[kind="secondary"] {
+  font-size: 9.5px; font-weight: 600; letter-spacing: .02em;
+  padding: .05rem .4rem; min-height: 18px; border-radius: 4px;
+}
+
+div[class*="st-key-scroll-"] { padding-right: 6px; }
+
+.ix-avatars { display: flex; align-items: center; margin-top: 6px; }
+.ix-avatar {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--surface-sunken); color: var(--text-secondary);
+  font-size: 9px; font-weight: 600; letter-spacing: .02em;
+  display: inline-flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 2px var(--surface);   /* the surface ring for overlapping marks */
+  margin-left: -5px;
+}
+.ix-avatar:first-child { margin-left: 0; }
+.ix-avatar--more { background: transparent; color: var(--text-faint); box-shadow: none; }
+
+/* ===== dialog body ====================================================== */
+
+.ix-dialog-cols {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px 20px; margin-top: 8px;
+}
+
+/* ===== KPI tiles ======================================================== */
+
+div[class*="st-key-card-kpi-"] { padding: 9px 12px 6px; }
+/* The visual gets a constant-height slot, so a tile with a trend strip and a
+   tile with a meter are the same height and the stat row lines up. */
+.ix-meter-slot { height: 40px; display: flex; align-items: center; }
+.ix-kpi-label {
+  font-size: 11px; font-weight: 600; color: var(--text-muted); margin: 0;
+  letter-spacing: .01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.ix-kpi-value {
+  font-size: 24px; font-weight: 600; letter-spacing: -.03em; line-height: 1.05;
+  color: var(--text-primary); font-variant-numeric: tabular-nums; margin: 3px 0 0;
+}
+.ix-kpi-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-top: 5px; }
+.ix-kpi-caption { font-size: 11px; color: var(--text-faint); margin: 0; }
+.ix-delta {
+  font-size: 10.5px; font-weight: 600; padding: 1px 6px; border-radius: 5px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.ix-delta--up   { color: var(--good); background: var(--good-wash); }
+.ix-delta--down { color: var(--risk); background: var(--risk-wash); }
+.ix-delta--flat { color: var(--text-faint); background: var(--surface-sunken); }
+
+/* Meter: the sleek relief for an attainment-style metric with no trend. */
+.ix-meter {
+  flex: 1 1 auto; height: 5px; border-radius: 999px;
+  background: var(--surface-sunken); overflow: hidden;
+}
+.ix-meter i { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+
+/* ===== states =========================================================== */
+
+.ix-empty {
+  border: 1px dashed var(--border-strong); border-radius: 10px;
+  background: var(--surface-sunken); padding: 18px 14px; text-align: center;
+}
+.ix-empty-head { font-size: 12.5px; font-weight: 600; color: var(--text-secondary); margin: 0 0 2px; }
+.ix-empty-sub  { font-size: 11.5px; color: var(--text-faint); margin: 0; }
+
+.ix-error {
+  border: 1px solid var(--border); border-left: 3px solid var(--caution);
+  border-radius: 10px; background: var(--caution-wash); padding: 11px 13px;
+}
+.ix-error-head { font-size: 12.5px; font-weight: 600; color: var(--text-primary); margin: 0 0 2px; }
+.ix-error-sub  { font-size: 11.5px; color: var(--text-secondary); margin: 0; }
+
+.ix-skel { border-radius: 6px; background: var(--surface-sunken); animation: ix-shimmer 1.4s ease-in-out infinite; }
+@keyframes ix-shimmer { 0%,100% { opacity: 1 } 50% { opacity: .5 } }
+
+@keyframes ix-pulse {
+  0%   { box-shadow: 0 0 0 3px var(--accent-ring); border-radius: 12px; }
+  100% { box-shadow: 0 0 0 12px transparent; border-radius: 12px; }
+}
+
+/* ===== info panel / definition list ===================================== */
+
+.ix-dl { margin: 0; }
+.ix-dl dt {
+  font-size: 9.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-faint); margin: 9px 0 2px;
+}
+.ix-dl dt:first-child { margin-top: 0; }
+.ix-dl dd { font-size: 12px; color: var(--text-secondary); margin: 0; line-height: 1.45; }
+
+/* ===== prose sections =================================================== */
+
+.ix-section { margin-bottom: 12px; }
+.ix-section:last-child { margin-bottom: 0; }
+.ix-section-label {
+  font-size: 9.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-faint); margin: 0 0 4px;
+}
+.ix-section p  { font-size: 12.5px; color: var(--text-secondary); margin: 0; line-height: 1.55; }
+.ix-section ul { margin: 0; padding-left: 16px; }
+.ix-section li { font-size: 12.5px; color: var(--text-secondary); margin: 0 0 4px; line-height: 1.5; }
+.ix-section ol { margin: 0; padding-left: 0; list-style: none; counter-reset: ix; }
+.ix-section ol li {
+  counter-increment: ix; position: relative; padding-left: 22px; margin-bottom: 7px;
+}
+.ix-section ol li::before {
+  content: counter(ix); position: absolute; left: 0; top: 1px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--accent-wash); color: var(--accent);
+  font-size: 9.5px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.ix-rationale { color: var(--text-faint); font-size: 11.5px; }
+
+/* ===== conversation ===================================================== */
+
+.st-key-thread-body { max-width: 800px; margin: 0 auto; width: 100%; }
+
+/* The wait state: the same mark that signs every answer, pulsing. */
+.ix-thinking { display: flex; align-items: center; gap: 7px; padding-left: 26px; }
+.ix-thinking .ix-mark { position: static; animation: ix-breathe 1.5s ease-in-out infinite; }
+.ix-thinking-text { font-size: 13px; color: var(--text-muted); }
+.ix-dots { display: inline-flex; gap: 3px; align-items: center; }
+.ix-dots i {
+  width: 3px; height: 3px; border-radius: 50%; background: var(--text-faint);
+  animation: ix-blink 1.4s ease-in-out infinite;
+}
+.ix-dots i:nth-child(2) { animation-delay: .2s; }
+.ix-dots i:nth-child(3) { animation-delay: .4s; }
+@keyframes ix-breathe {
+  0%, 100% { opacity: .45; transform: scale(.9); }
+  50%      { opacity: 1;   transform: scale(1.08); }
+}
+@keyframes ix-blink { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+.ix-msg-user {
+  background: var(--accent); color: #fff; font-size: 13px; line-height: 1.55;
+  padding: 9px 14px; border-radius: 14px 14px 4px 14px;
+  margin: 14px 0 0 auto; max-width: 78%; width: fit-content;
+}
+.ix-msg-ai {
+  font-size: 13.5px; color: var(--text-primary); line-height: 1.68;
+  margin: 10px 0 0; padding: 0 0 0 26px; position: relative;
+}
+.ix-msg-ai .ix-mark { position: absolute; left: 0; top: 4px; color: var(--accent); }
+.ix-msg-note { font-size: 10.5px; color: var(--text-faint); margin: 6px 0 0; padding-left: 26px; }
+/* End of a full chat. Reads as a quiet closing note rather than an error: the
+   reader has not done anything wrong, the conversation simply ended. */
+.st-key-thread-limit {
+  margin: 18px 0 4px; padding: 14px 16px; border: 1px solid var(--border);
+  border-radius: 12px; background: var(--surface-sunken, var(--surface));
+  text-align: center;
+}
+.ix-limit-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0; }
+.ix-limit-body {
+  font-size: 11.5px; color: var(--text-muted); margin: 4px 0 10px;
+  max-width: 34em; margin-left: auto; margin-right: auto;
+}
+/* The thread's composer is bottom-pinned by Streamlit when it is not nested in
+   a container; this only skins it and gives the thread room to scroll past. */
+[data-testid="stBottom"] [data-testid="stChatInput"] {
+  border-radius: 14px; border: 1px solid var(--border); background: var(--surface);
+  box-shadow: var(--shadow-md);
+}
+[data-testid="stBottom"] [data-testid="stChatInput"]:focus-within {
+  border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-ring);
+}
+[data-testid="stBottomBlockContainer"] { padding-bottom: 14px; max-width: 1280px; }
+
+/* ===== user-authored canvas blocks ====================================== */
+
+.ix-block-heading {
+  font-size: 14px; font-weight: 600; letter-spacing: -.01em;
+  color: var(--text-primary); margin: 10px 0 2px;
+}
+.ix-block-body {
+  font-size: 12px; color: var(--text-secondary); margin: 4px 0 0; line-height: 1.5;
+}
+div[class*="st-key-row-head-block-"] { align-items: center; }
+/* A heading is a label on the canvas, not a card. */
+div[class*="st-key-row-head-block-"] { padding: 0 2px; }
+
+/* ===== portfolio filter row ============================================= */
+
+.st-key-row-portfolio-filters { margin: 0 0 8px; }
+.st-key-row-portfolio-filters > [data-testid="stElementContainer"]:first-child {
+  flex: 1 1 auto; max-width: 320px;
+}
+.st-key-row-portfolio-filters [data-testid="stMultiSelect"] { min-width: 160px; }
+
+/* ===== page footer ====================================================== */
+
+.ix-foot {
+  margin-top: 18px; padding-top: 8px; border-top: 1px solid var(--border);
+}
+
+/* ===== settings and catalogue rows ====================================== */
+
+.ix-row-flex { display: flex; align-items: center; gap: 10px; }
+.ix-icon-box {
+  width: 30px; height: 30px; border-radius: 8px; flex: none;
+  background: var(--accent-wash); color: var(--accent);
+  display: inline-flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.ix-kv { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; font-size: 12.5px; }
+.ix-kv + .ix-kv { border-top: 1px solid var(--border); }
+.ix-kv span:first-child { color: var(--text-muted); }
+.ix-kv span:last-child { color: var(--text-primary); font-weight: 500; }
+
+/* ===== dataframe ======================================================== */
+
+[data-testid="stDataFrame"] { border-radius: 10px; overflow: hidden; }
+[data-testid="stDataFrame"] * { font-size: 12px; }
+
+/* ===== dialogs ========================================================== */
+
+[data-testid="stDialog"] > div {
+  border-radius: 14px; border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===== filters ========================================================== */
+
+div[class*="st-key-flt-"] button { font-size: 11px; min-height: 26px; padding: .15rem .6rem; }
+div[class*="st-key-vis-"] label { font-size: 12px !important; }  /* beats BaseWeb inline size */
+
+/* ===== responsive ======================================================= */
+
+@media (max-width: 1000px) {
+  [data-testid="stMainBlockContainer"] { padding: 1rem 1.1rem 4rem; }
+  .ix-brief-item { grid-template-columns: 1fr; gap: 4px; }
+  .ix-greet-title { font-size: 24px; }
+}

@@ -1,0 +1,61 @@
+account_id,account_name,domain,industry,region,segment,tier,status,arr,employee_count,owner_id,renewal_date,health_score,created_at
+ACC-1001,Apex Logistics,apexlogistics.com,Financial Services,EMEA,SMB,Tier 3,Customer,31000,137,USR-3002,2027-06-16,67,2023-04-21
+ACC-1002,Vortex Analytics,vortexanalytics.com,Cloud Infrastructure,APAC,Mid-Market,Tier 2,Prospect,0,2124,USR-3005,,64,2022-12-13
+ACC-1003,CloudScale Systems,cloudscalesystems.com,Healthcare,AMER,Enterprise,Tier 1,Customer,297000,2738,USR-3006,2026-12-19,60,2025-12-25
+ACC-1004,BioHealth Labs,biohealthlabs.com,Retail & E-commerce,AMER,Mid-Market,Tier 2,Customer,113000,2330,USR-3007,2026-08-17,85,2025-08-31
+ACC-1005,OmniRetail Group,omniretailgroup.com,Cybersecurity,APAC,Enterprise,Tier 1,Customer,247000,5036,USR-3009,2027-01-19,50,2025-05-25
+ACC-1006,CyberGuard Networks,cyberguardnetworks.com,Data & Analytics,AMER,SMB,Tier 3,Customer,42000,123,USR-3010,2026-11-21,91,2023-07-04
+ACC-1007,DataPulse AI,datapulseai.com,Media & Telecom,EMEA,Enterprise,Tier 1,Customer,250000,10920,USR-3011,2026-10-26,72,2024-08-10
+ACC-1008,Nexus Financial,nexusfinancial.com,Energy & Utilities,AMER,Mid-Market,Tier 2,Customer,160000,2003,USR-3012,2027-01-10,44,2026-04-06
+ACC-1009,Strata Energy,strataenergy.com,Manufacturing,AMER,Mid-Market,Tier 2,Customer,91000,1382,USR-3013,2026-09-21,91,2024-02-03
+ACC-1010,Fintech Dynamics,fintechdynamics.com,Enterprise Software,EMEA,SMB,Tier 3,Customer,59000,344,USR-3001,2027-04-08,87,2025-11-03
+ACC-1011,Quantum Edge,quantumedge.com,Financial Services,APAC,Mid-Market,Tier 2,Customer,155000,1743,USR-3002,2027-03-24,95,2023-01-17
+ACC-1012,Synergy Media,synergymedia.com,Cloud Infrastructure,AMER,Mid-Market,Tier 2,Customer,64000,836,USR-3005,2026-08-24,56,2025-03-18
+ACC-1013,Astra Manufacturing,astramanufacturing.com,Healthcare,EMEA,Enterprise,Tier 1,Prospect,0,7325,USR-3006,,66,2025-10-12
+ACC-1014,Velocity Cloud,velocitycloud.com,Retail & E-commerce,APAC,Enterprise,Tier 1,Customer,415000,11907,USR-3007,2027-03-04,77,2022-12-30
+ACC-1015,Horizon Ventures,horizonventures.com,Cybersecurity,AMER,Enterprise,Tier 1,Customer,213000,3613,USR-3009,2026-11-16,96,2023-09-10
+ACC-1016,Pinnacle Software,pinnaclesoftware.com,Data & Analytics,AMER,Enterprise,Tier 1,Customer,347000,6924,USR-3010,2026-10-26,45,2023-06-23
+ACC-1017,Aether Digital,aetherdigital.com,Media & Telecom,APAC,Mid-Market,Tier 2,Prospect,0,1547,USR-3011,,44,2024-09-07
+ACC-1018,Lumina Health,luminahealth.com,Energy & Utilities,AMER,Mid-Market,Tier 2,Customer,160000,1762,USR-3012,2026-08-23,54,2026-02-20
+ACC-1019,Crest Solutions,crestsolutions.com,Manufacturing,EMEA,Enterprise,Tier 1,Customer,180000,3460,USR-3013,2026-11-09,83,2026-01-05
+ACC-1020,Trident Corp,tridentcorp.com,Enterprise Software,AMER,Enterprise,Tier 1,Customer,365000,4805,USR-3001,2026-09-25,64,2023-08-16
+ACC-1021,Beacon Utilities,beaconutilities.com,Financial Services,AMER,Mid-Market,Tier 2,Customer,87000,2465,USR-3002,2026-08-01,89,2024-01-22
+ACC-1022,Core Networks,corenetworks.com,Cloud Infrastructure,EMEA,Mid-Market,Tier 2,Customer,106000,2473,USR-3005,2026-12-03,65,2025-09-12
+ACC-1023,Echelon Labs,echelonlabs.com,Healthcare,APAC,Mid-Market,Tier 2,Customer,161000,983,USR-3006,2026-09-25,90,2025-04-10
+ACC-1024,Zenith Retail,zenithretail.com,Retail & E-commerce,AMER,Enterprise,Tier 1,Prospect,0,10096,USR-3007,,70,2023-08-18
+ACC-1025,Kinetix Robotics,kinetixrobotics.com,Cybersecurity,EMEA,SMB,Tier 3,Prospect,0,231,USR-3009,,53,2025-11-28
+ACC-1026,Optima Insurance,optimainsurance.com,Data & Analytics,APAC,SMB,Tier 3,Prospect,0,243,USR-3010,,54,2025-11-11
+ACC-1027,Veritas Data,veritasdata.com,Media & Telecom,AMER,SMB,Tier 3,Customer,46000,152,USR-3011,2026-12-13,88,2024-06-24
+ACC-1028,Vanguard Payments,vanguardpayments.com,Energy & Utilities,AMER,Mid-Market,Tier 2,Customer,93000,551,USR-3012,2026-07-30,86,2025-12-28
+ACC-1029,Solstice Energy,solsticeenergy.com,Manufacturing,APAC,Mid-Market,Tier 2,Customer,154000,2184,USR-3013,2026-08-09,43,2025-10-03
+ACC-1030,Infini Telecom,infinitelecom.com,Enterprise Software,AMER,Mid-Market,Tier 2,Prospect,0,1008,USR-3001,,75,2023-06-14
+ACC-1031,Pulse Diagnostics,pulsediagnostics.com,Financial Services,EMEA,Enterprise,Tier 1,Customer,292000,3651,USR-3002,2026-07-18,49,2023-03-17
+ACC-1032,Titan Industrial,titanindustrial.com,Cloud Infrastructure,AMER,Mid-Market,Tier 2,Customer,101000,652,USR-3005,2027-03-17,48,2022-10-20
+ACC-1033,Prism Analytics,prismanalytics.com,Healthcare,AMER,Enterprise,Tier 1,Customer,362000,8356,USR-3006,2027-05-09,48,2025-11-06
+ACC-1034,Cobalt Mining,cobaltmining.com,Retail & E-commerce,EMEA,SMB,Tier 3,Prospect,0,278,USR-3007,,70,2024-08-26
+ACC-1035,Sentry Security,sentrysecurity.com,Cybersecurity,APAC,SMB,Tier 3,Prospect,0,388,USR-3009,,71,2026-01-24
+ACC-1036,Helios Power,heliospower.com,Data & Analytics,AMER,Mid-Market,Tier 2,Prospect,0,439,USR-3010,,78,2023-11-04
+ACC-1037,Fortress Bank,fortressbank.com,Media & Telecom,EMEA,Mid-Market,Tier 2,Customer,116000,1036,USR-3011,2027-02-15,65,2022-10-19
+ACC-1038,Clarity Health,clarityhealth.com,Energy & Utilities,APAC,SMB,Tier 3,Prospect,0,113,USR-3012,,75,2024-01-24
+ACC-1039,Nouveau Retail,nouveauretail.com,Manufacturing,AMER,SMB,Tier 3,Customer,45000,349,USR-3013,2027-05-07,46,2025-10-02
+ACC-1040,Orion Aerospace,orionaerospace.com,Enterprise Software,AMER,Enterprise,Tier 1,Customer,303000,8206,USR-3001,2026-11-29,69,2024-09-08
+ACC-1041,Hyperion Cloud,hyperioncloud.com,Financial Services,APAC,Mid-Market,Tier 2,Customer,129000,1462,USR-3002,2026-07-15,80,2023-09-10
+ACC-1042,Astral Media,astralmedia.com,Cloud Infrastructure,AMER,Mid-Market,Tier 2,Customer,171000,1750,USR-3005,2026-09-26,48,2025-08-29
+ACC-1043,Summit Financial,summitfinancial.com,Healthcare,EMEA,Enterprise,Tier 1,Customer,384000,3104,USR-3006,2026-09-14,48,2023-05-09
+ACC-1044,Vector Biotech,vectorbiotech.com,Retail & E-commerce,AMER,Enterprise,Tier 1,Customer,223000,5853,USR-3007,2026-09-12,79,2024-08-14
+ACC-1045,Eclipse Systems,eclipsesystems.com,Cybersecurity,AMER,Mid-Market,Tier 2,Prospect,0,2351,USR-3009,,66,2023-06-07
+ACC-1046,Matrix Logistics,matrixlogistics.com,Data & Analytics,EMEA,Mid-Market,Tier 2,Customer,177000,2282,USR-3010,2027-02-14,46,2025-12-06
+ACC-1047,Northwind Foods,northwindfoods.com,Media & Telecom,APAC,Enterprise,Tier 1,Customer,358000,11139,USR-3011,2027-01-09,68,2023-07-04
+ACC-1048,Ironclad Insurance,ironcladinsurance.com,Energy & Utilities,AMER,Enterprise,Tier 1,Customer,367000,11030,USR-3012,2027-06-28,53,2023-03-10
+ACC-1049,Silverline Telecom,silverlinetelecom.com,Manufacturing,EMEA,SMB,Tier 3,Customer,51000,223,USR-3013,2026-12-09,54,2025-08-13
+ACC-1050,Redwood Capital,redwoodcapital.com,Enterprise Software,APAC,Enterprise,Tier 1,Prospect,0,2775,USR-3001,,71,2023-12-28
+ACC-1051,Bluepeak Software,bluepeaksoftware.com,Financial Services,AMER,SMB,Tier 3,Prospect,0,209,USR-3002,,89,2025-05-07
+ACC-1052,Granite Utilities,graniteutilities.com,Cloud Infrastructure,AMER,Enterprise,Tier 1,Customer,188000,8485,USR-3005,2026-11-02,59,2025-08-12
+ACC-1053,Meridian Health,meridianhealth.com,Healthcare,APAC,Mid-Market,Tier 2,Customer,151000,618,USR-3006,2027-06-01,76,2024-11-05
+ACC-1054,Copperfield Retail,copperfieldretail.com,Retail & E-commerce,AMER,Mid-Market,Tier 2,Prospect,0,1922,USR-3007,,44,2024-02-27
+ACC-1055,Lakeshore Manufacturing,lakeshoremanufacturing.com,Cybersecurity,EMEA,SMB,Tier 3,Customer,51000,167,USR-3009,2026-11-08,88,2023-02-23
+ACC-1056,Ridgeline Data,ridgelinedata.com,Data & Analytics,AMER,Mid-Market,Tier 2,Customer,127000,1599,USR-3010,2026-09-26,84,2024-05-07
+ACC-1057,Foxglove Labs,foxglovelabs.com,Media & Telecom,AMER,Enterprise,Tier 1,Prospect,0,6065,USR-3011,,71,2023-12-02
+ACC-1058,Harborview Energy,harborviewenergy.com,Energy & Utilities,EMEA,SMB,Tier 3,Customer,45000,353,USR-3012,2027-03-27,68,2023-06-28
+ACC-1059,Stonebridge Bank,stonebridgebank.com,Manufacturing,APAC,SMB,Tier 3,Customer,23000,89,USR-3013,2027-04-28,90,2023-08-18
+ACC-1060,Wavelength Media,wavelengthmedia.com,Enterprise Software,AMER,Enterprise,Tier 1,Prospect,0,7112,USR-3001,,58,2025-02-02
